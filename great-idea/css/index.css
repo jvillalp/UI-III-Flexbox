@@ -63,99 +63,102 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-/* body css of page*/
-body{
-	font-family: 'Titillium Web', sans-serif;
+/* Your code starts here! */
+.container {
+	width: 900px;
 	margin: 0 auto;
-	max-width: 1000px;
+	box-sizing: border-box;
+	vertical-align: top;
 }
-/* navigation bar of page*/
-.navigation{
-	/* width: 1000px;
-	margin: 0 auto; */
-	display:flex;
-}
-nav{
-	// text-align: left;//
-	margin-top: 4%;
-	display:flex;
-}
-nav > a{
-	margin: 0 22px 0;
-	color: grey;
-}
-.navbar{
-	font-size: 20px;
-	/* display: inline-block; */
-	display:flex;
-	margin-top: 2%;
-}
-.great{
-	/* display: inline-block;
-	margin-left: 14%; */
-	display:flex;
 
+header {
+	height: 60px;
+	vertical-align: top;
 }
-.navbar a:link {
+
+header nav {
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 125px;
+	height: 35px;
+	vertical-align: top;
+}
+
+header nav a {
+	margin: 20px;
+	color: gray;
 	text-decoration: none;
 }
-#innov{
-	display: inline-block;
-	width: 49%;
-	padding: 5% 15%;
-	text-align: center;
-	margin-bottom: 70px;
-	vertical-align: bottom;
-}
-#code-img{
-	display: inline-block;
-	width: 49%;
-	text-align:center;
-	margin-top: 50px;
-	vertical-align: bottom;
-	margin-bottom: 50px;
-}
-#title{
-	font-size: 60px;
-}
-button{
-	width: 125px;
-	padding: 5px;
-	font-size: 14px;
-	border: 1px solid grey;
-	background: white;
-}
-.body-top article{
-	width: 49.5%;
-	display: inline-block;
-}
-.body-bot article{
-	width: 33%;
-	display:inline-block;
-}
-.body-top{
-	border-top: 1px solid black;
-	padding-top: 3%;
-	padding-bottom: 3%;
-}
-section.body-top > article{
-	padding: 0 1px 0;
+
+.logo {
+	margin-top: 10px;
 }
 
-section.body-img > img {
-	width: 100%;
+.content-double {
+	display: inline-block;
 }
-.body-bot{
-	border-bottom: 1px solid black;
-	padding-top: 3%;
-	padding-bottom: 3%;
+
+.banner {
 }
-footer{
-	padding-top: 5%;
-	margin-bottom: 4%;
-}
-.copyright{
+
+.banner .banner-text {
+	margin: 0 auto;
 	text-align: center;
-	font-family: 'Solway', serif;
+	vertical-align: top;
+	display: inline-block;
+	width: 49.5%;
+	height: 400px;
+	margin: 20px 0;
+}
+
+.banner .banner-text#b-text {
+	padding-top: 40px;
+}
+
+.banner .banner-text h1 {
+	font-size: 80px;
+	display: inline-block;
+}
+
+.banner .banner-text button {
+	width: 170px;
+	padding: 7px 0;
+	font-size: 1.1em;
+}
+
+.main {
+	vertical-align: top;
+}
+
+.main .main-content {
+	padding: 25px 10px;
+}
+.main .main-content {
+	width: 49.5%;	
+	display: inline-block;
+}
+
+.pic-content .middle-img {
+	padding: 10px 10px;
+}
+
+.content .content-triple {
+	width: 33%;
+	display: inline-block;
+	padding: 25px 10px;
+}
+
+.contact {
+	padding: 25px 10px;
+}
+
+footer {
+	text-align: center;
+	margin: 20px 0;
+	padding: 25px 0;
+}
+
+.address {
+	margin-top: 16px;
+	display: inline-block;
 }
